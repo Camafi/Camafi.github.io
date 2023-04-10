@@ -1,6 +1,35 @@
 <nz-layout>
-    <nz-header>
-        
+    <nz-header >
+      <div>
+        <a href="/">Bertonneau Clément</a>
+      </div>
+      <div class="buttonHeader">
+        <button id="button" class="home" nz-button nzType="text">Home</button>
+        <button id="button" nz-button nzType="text">About me</button>
+        <button id="button" nz-button nzType="text">Skill</button>
+        <button id="button" nz-button nzType="text">Projects</button>
+        <button id="button" nz-button nzType="text">Contact</button>
+        <span class="bulb" nz-icon nzType="bulb" nzTheme="fill"></span>
+      </div>
+
+      <a class="dropdown" nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+        <span class="menu" nz-icon nzType="menu" nzTheme="outline"></span>
+        <span nz-icon nzType="down"></span>
+      </a>
+      <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul class="" nz-menu>
+          <li nz-menu-item><button id="button"  nz-button nzType="text">Home</button></li>
+          <li nz-menu-item><button id="button" nz-button nzType="text">About me</button></li>
+          <li nz-menu-item><button id="button" nz-button nzType="text">Skill</button></li>
+          <li nz-menu-item><button id="button" nz-button nzType="text">Projects</button></li>
+          <li nz-menu-item><button id="button" nz-button nzType="text">Contact</button></li>
+        </ul>
+        <!-- <button id="button"  nz-button nzType="text">Home</button>
+        <button id="button" nz-button nzType="text">About me</button>
+        <button id="button" nz-button nzType="text">Skill</button>
+        <button id="button" nz-button nzType="text">Projects</button>
+        <button id="button" nz-button nzType="text">Contact</button> -->
+      </nz-dropdown-menu>
     </nz-header>
 </nz-layout>
 
