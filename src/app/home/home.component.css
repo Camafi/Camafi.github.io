@@ -1,0 +1,56 @@
+/* Set up the container for the animation */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Define the styles for the text */
+  .text {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0;
+    white-space: nowrap;
+  }
+  
+  /* Define the keyframes for the animation */
+  @keyframes write-text {
+    0% {
+      opacity: 0;
+      width: 0;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  
+  /* Apply the animation to the first text element */
+  .text:first-child {
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: write-text;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Apply the animation to the second text element */
+  .text:last-child {
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: write-text;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Loop the animation indefinitely */
+  .text {
+    animation-iteration-count: infinite;
+  }
