@@ -11,7 +11,7 @@
   .text {
     position: absolute;
     top: 50%;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     opacity: 0;
