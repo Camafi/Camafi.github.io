@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    --text-color: rgba(0, 0, 0, 0.85);
+    --bkg-color: rgba(214, 214, 214, 0.85);
+    --bkg-header-color: rgba(245, 245, 245, 0.85);
+    --btn-hover-color: rgba(110, 225, 240, 0.85);
+    --btn-bkg-color: rgba(216, 216, 216, 0.85);
+    --bulb-color: rgba(255, 187, 0, 0.74);
+}
+
+body.dark-theme {
+    --text-color: rgba(255, 255, 255, 0.85);
+    --bkg-color: rgba(36, 36, 36, 0.85);
+    --bkg-header-color: rgba(49, 49, 49, 0.85);
+    --btn-hover-color: rgba(92, 54, 136, 0.85);
+    --btn-bkg-color: rgba(99, 99, 99, 0.85);
+    --bulb-color: rgba(218, 167, 28, 0.74);
+}
+
