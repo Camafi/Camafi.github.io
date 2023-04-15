@@ -1,9 +1,9 @@
 .ant-layout-header {
   height: 64px;
   padding: 0 50px;
-  color: rgba(0, 0, 0, 0.85);
+  color: var(--text-color);
   line-height: 64px;
-  background: #f1f1f1;
+  background: var(--bkg-header-color);
   border-width: 0px;
   display: flex;
   justify-content: space-between;
@@ -12,7 +12,8 @@
 }
 
 #button {
-  color: black;
+  color: var(--text-color);
+  background-color: var(--btn-bkg-color);
   margin: 0;
   font-size: 20px;
   font-family: ui-sans-serif;
@@ -23,7 +24,7 @@
 }
 
 #button:hover{
-  background-color: rgba(110, 225, 240, 0.85);
+  background-color: var(--btn-hover-color);
 }
 
 button {
@@ -32,7 +33,7 @@ button {
 }
 
 .home {
-  background-color: rgba(110, 225, 240, 0.85);
+  background-color: var(--btn-hover-color);
 }
 
 [nz-icon] {
@@ -41,11 +42,11 @@ button {
 }
 
 .bulb {
-  color: rgba(255, 187, 0, 0.74);
+  color: var(--bulb-color);
 }
 
 .menu {
-  color: rgba(110, 225, 240, 0.85);
+  color: var(--btn-hover-color);
 }
 
 .dropdown {
@@ -53,7 +54,15 @@ button {
 }
 
 li {
+  padding: 0%;
 
+}
+
+.nom{
+  font-weight: bold;
+  color: var(--text-color);
+  font-size: large;
+  font-family: cursive;
 }
 
 @media only screen and (max-width: 940px) {
@@ -62,5 +71,9 @@ li {
   } 
   .dropdown {
   display:flex;
+}
+
+.nom{
+  font-size: medium;
 }
 } 
