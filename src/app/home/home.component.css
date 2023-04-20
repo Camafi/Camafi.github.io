@@ -1,56 +1,75 @@
 /* Set up the container for the animation */
 .container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  /* Define the styles for the text */
-  .text {
-    position: absolute;
-    top: 50%;
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 200px;
+  left: 5%;
+  order: 2;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.titre {
+  display: flex;
+  margin-top: auto;
+  order: 1;
+}
+
+.presentation {
+  display: flex;
+  margin-bottom: auto;
+  order: 3;
+}
+/* Define the styles for the text */
+.text {
+  left: 5%;
+  top: 50%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+
+/* Define the keyframes for the animation */
+@keyframes fade-in-out {
+  0% {
     opacity: 0;
-    white-space: nowrap;
   }
-  
-  /* Define the keyframes for the animation */
-  @keyframes write-text {
-    0% {
-      opacity: 0;
-      width: 0;
-    }
-    100% {
-      opacity: 1;
-      width: 100%;
-    }
+  16.666% {
+    opacity: 1;
   }
-  
-  /* Apply the animation to the first text element */
-  .text:first-child {
-    left: 50%;
-    transform: translateX(-50%);
-    animation-name: write-text;
-    animation-delay: 0s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+  50% {
+    opacity: 1;
   }
-  
-  /* Apply the animation to the second text element */
-  .text:last-child {
-    left: 50%;
-    transform: translateX(-50%);
-    animation-name: write-text;
-    animation-delay: 4s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+  66.666% {
+    opacity: 0;
   }
-  
-  /* Loop the animation indefinitely */
-  .text {
-    animation-iteration-count: infinite;
+  100% {
+    opacity: 0;
   }
+}
+
+/* Apply the animation to the first text element */
+.text:first-child {
+  left: 50%;
+  animation-name: fade-in-out;
+  animation-delay: 0s;
+}
+
+/* Apply the animation to the second text element */
+.text:last-child {
+  left: 50%;
+  animation-name: fade-in-out;
+  animation-delay: 4s;
+}
+
+/* Loop the animation indefinitely */
+.text {
+  animation-iteration-count: infinite;
+}
