@@ -3,24 +3,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  height: 200px;
-  left: 5%;
   order: 2;
 }
 
 .body {
   display: flex;
   flex-direction: column;
-  background-image: url(../../assets/Background.jpg);
+  height: 900px;
+  background-image: var(--bkg-image);
 }
 
 .titre {
   display: flex;
   font-weight: bolder;
-  font-size: larger;
+  font-size: 40px;
   justify-content: center;
   margin-top: auto;
+  color: var(--text-color);
+  margin-top: 10%;
   order: 1;
 }
 
@@ -28,16 +28,20 @@
   display: flex;
   justify-content: center;
   font-weight: bolder;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 30px;
+  margin-top: 10%;
   margin-bottom: auto;
   order: 3;
 }
 /* Define the styles for the text */
 .text {
-  left: 5%;
-  top: 50%;
   font-size: 50px;
   font-weight: bolder;
   text-transform: uppercase;
+  color: var(--text-color);
+  margin-top: 10%;
   opacity: 0;
   animation-duration: 8s;
   animation-fill-mode: forwards;
