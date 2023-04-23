@@ -1,8 +1,9 @@
 /* Set up the container for the animation */
 .container {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: center;
+
   height: 200px;
   left: 5%;
   order: 2;
@@ -11,16 +12,22 @@
 .body {
   display: flex;
   flex-direction: column;
+  background-image: url(../../assets/Background.jpg);
 }
 
 .titre {
   display: flex;
+  font-weight: bolder;
+  font-size: larger;
+  justify-content: center;
   margin-top: auto;
   order: 1;
 }
 
 .presentation {
   display: flex;
+  justify-content: center;
+  font-weight: bolder;
   margin-bottom: auto;
   order: 3;
 }
@@ -28,8 +35,8 @@
 .text {
   left: 5%;
   top: 50%;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: bolder;
   text-transform: uppercase;
   opacity: 0;
   animation-duration: 8s;
@@ -64,7 +71,7 @@
 
 /* Apply the animation to the second text element */
 .text:last-child {
-  left: 50%;
+  left: -50%;
   animation-name: fade-in-out;
   animation-delay: 4s;
 }
