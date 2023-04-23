@@ -1,0 +1,86 @@
+/* Set up the container for the animation */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 2;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  background-image: var(--bkg-image);
+}
+
+.titre {
+  display: flex;
+  font-weight: bolder;
+  font-size: 40px;
+  justify-content: center;
+  margin-top: auto;
+  color: var(--text-color);
+  margin-top: 10%;
+  order: 1;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 30px;
+  margin-top: 10%;
+  margin-bottom: auto;
+  order: 3;
+}
+/* Define the styles for the text */
+.text {
+  font-size: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-top: 10%;
+  opacity: 0;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+
+/* Define the keyframes for the animation */
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  16.666% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Apply the animation to the first text element */
+.text:first-child {
+  left: 50%;
+  animation-name: fade-in-out;
+  animation-delay: 0s;
+}
+
+/* Apply the animation to the second text element */
+.text:last-child {
+  left: -50%;
+  animation-name: fade-in-out;
+  animation-delay: 4s;
+}
+
+/* Loop the animation indefinitely */
+.text {
+  animation-iteration-count: infinite;
+}
