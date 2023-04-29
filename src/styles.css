@@ -7,6 +7,9 @@ body {
     --btn-bkg-color: rgba(216, 216, 216, 0.85);
     --bulb-color: rgba(255, 187, 0, 0.74);
     --bkg-image: url(../../Camafi.github.io/src/assets/Background.png);
+    --text-aboutMe-subtitle-color: rgb(5, 42, 255);
+    --text-aboutMe-text-color: rgb(5, 143, 255);
+
 }
 
 body.dark-theme {
@@ -17,6 +20,7 @@ body.dark-theme {
     --btn-bkg-color: rgba(99, 99, 99, 0.85);
     --bulb-color: rgba(218, 167, 28, 0.74);
     --bkg-image: url(../../Camafi.github.io/src/assets/BackgroundDark.jpg);
-
+    --text-aboutMe-subtitle-color: rgb(5, 42, 255);
+    --text-aboutMe-text-color: rgb(5, 143, 255);
 }
 
