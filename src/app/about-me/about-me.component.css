@@ -1,0 +1,51 @@
+
+.body{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    background-color: var(--bkg-header-color);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin-top: 0%;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 6%;
+    color: var( --text-aboutMe-subtitle-color);
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  text-align: center;
+    color: var( --text-aboutMe-text-color);
+    margin-top: 3%;
+}
+
+.icon{
+    
+    display: flex;
+    justify-content: flex-start;
+    font-size: 500%;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+i{
+    margin: 2%;
+    padding: 10px;
+}

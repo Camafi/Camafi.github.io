@@ -16,6 +16,7 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 registerLocaleData(en);
 
@@ -23,7 +24,8 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,7 @@ registerLocaleData(en);
     NzLayoutModule,
     NzMenuModule,
     NzDropDownModule
-  ],
+    ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
   ],
