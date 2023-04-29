@@ -1,0 +1,38 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: var(--bkg-color);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin-top: 0%;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 6%;
+
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 3%;
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 40px;
+    margin-top: 3%;
+    flex-wrap: wrap;
+}
