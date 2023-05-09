@@ -4,44 +4,223 @@
 
     <div class="réalisation">
         réalisation
-        <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Show Modal</span></button>
-        <nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" [nzFooter]="null" >
+        <button nz-button [nzType]="'primary'" (click)="JPOModal(JPO)"><span>JPO Virutelle</span></button>
+        <button nz-button [nzType]="'primary'" (click)="BrosModal(Bros)"><span>Bowser Bros</span></button>
+        <button nz-button [nzType]="'primary'" (click)="SangModal(Sang)"><span>Sang Pour Cent</span></button>
+
+        <nz-modal [(nzVisible)]="Bros" nzTitle="Une première application avec de l’ambition" (nzOnCancel)="BrosModal(Bros)" [nzFooter]="null" [nzWidth]="1080">
+                <ng-container *nzModalContent>
+                    <h2>
+                        Ma première application                    </h2>
+                    <h4>
+                        Cette application a été réalisée au début de mon école en 2e année. C’est la première application que j’ai réalisée en étant développeur informatique et que je savais que je voulais en faire mon métier.
+                    </h4>
+                    <h2>
+                        Bowser Bros                    </h2>
+                    <h4>
+                        C’était mon premier projet en C#, moi et mon équipe avais pour objectif de faire un jeu inspiré de Mario Bros qui lors de l’idée de départ n’avais pas beaucoup d’ambition. Mais au fil du temps et de l’avancement du projet, nous pouvions rêver et imaginer des améliorations impensables au début de ce projet                    </h4>
+                    <h2>
+                        Une ambition naissante                    </h2>
+                    <h4>
+                        L’enjeu pour ce projet est assez simple comme pour tout projet scolaire. L’on devait le réussir pour pouvoir passer au semestre suivant. Du moins c’est ce que l’on voulait au départ, car après avoir commencé le projet, on savait que l’on allait avoir la note minimale pour passer, l’on voulait être dans les meilleurs projets de l’année lors des présentations de tous les projets à la fin de l’année pendant le forum PI.                    </h4>
+                    <h2>
+                        Un projet de plus en plus risqué                    </h2>
+                    <h4>
+                        Les risques étaient nombreux car plus on ajoutait de fonctionnalité dans notre jeu plus l’on avait des chances d’avoir des problèmes dessus et que notre jeu ne soit pas stable. Un des risques que l’on n’avait pas envisagés, c’est que les personnes qui vont jouer à notre jeu vont essayer beaucoup de choses auquel nous n’avions pas pensé et donc nous devions stabiliser au maximum notre application.
+                    </h4>
+                    <h2>
+                        De nouvelles fonctionnalités                    </h2>
+                    <h4>
+                        Lors de la genèse de notre projet, l’on voulait juste un jeu vue du haut avec un ennemi qui vous poursuit sur la même map. Mais l’on a très vite réussi cet objectif donc nous avons dû trouver d’autre chose à ajouter sur notre jeu. Au final, nous avons un jeu vu de côté avec une hitbox pour chaque objet, des powers ups, un jeu à 2, un outil de création et sauvegarde de map, une extension twitch et d’autre amélioration que l’on n'a pas pu réaliser avec la contrainte de temps.                    </h4>
+                    <h2>
+                        Ma partie du projet                    </h2>
+                    <h4>
+                        Pour ce projet, je me suis chargé dans un premier temps de l’aspect graphique donc cherché toutes les images dont on avait besoin pour faire notre jeu et les incorporer. Il fallait bien les placer en fonction des animations de notre jeu ainsi que la résolution qui était changeable. J’ai ensuite fait les différent power ups qui rajoutais des nouvelles mécaniques de jeu et comme dernière grosse tache, j’ai fait la hitbox de tous les objets dans le jeu, personnages, power up, block, c’était de loin la tâche la plus dure pour moi, car je voulais le faire sans regarder de tutoriel sur comment faire des hitbox.
+                    </h4>
+                    <h2>
+                        Tous les objectifs atteints                    </h2>
+                   <h4>
+                    Lors de la présentation de notre jeu aux différents groupes d’évaluation, nous n’avons pas eu de bug critique donc nous avons réussi à bien stabiliser notre application. Et pour l’objectif de devenir un des meilleurs projets nous avons fini 3ème sur 52 projets donc je considère que le résultat est plus que satisfaisant. Avec ce projet, on nous a également donné des cartes de visite d’entreprise ce que l’on avait pas du tout considéré comme résultat potentiel, mais qui est à titre personnel un très bon plus.                   </h4>
+                    <h2>
+                        Une envie naissante
+                    </h2>
+                    <h4>
+                        À la suite de ce projet, j’ai été conforté dans l’idée de devenir un développeur informatique même si c’est encore large comme idée, c’est un bon début. C’était également mon premier projet en tant que développeur d’application structuré en orienté objet et c’était vraiment un plaisir de coder avec une structure précise qui m'a donné envie de continuer sur cette voie. Après ce projet, je me suis aussi renseigné sur des façons de faire notamment la hitbox et je me suis rendu compte de toutes les possibilités et j’ai eu envie de refaire l’application en améliorant tous les points. C’est à ce moment que je savais que j’avais fait le bon choix d’étude supérieure.                    </h4>                
+                </ng-container>
+
+        </nz-modal>
+
+        <nz-modal [(nzVisible)]="Sang" nzTitle="La collecte qui a dépassé toutes les attentes" (nzOnCancel)="SangModal(Sang)" [nzFooter]="null" [nzWidth]="1080">
             <ng-container *nzModalContent>
-                <h1>ITI’PO la JPO virtuelle</h1> 
-                Une JPO sur Discord : l'innovation pendant la période de Covid
-                Nous étions en pleine période de Covid et nous avions très peu de projets possibles car nous étions cloîtrés chez nous. L'école cherchait des propositions innovantes pour faire une Journée Portes Ouvertes (JPO), nous avons donc proposé l'idée de faire une JPO sur Discord, un réseau social.
-                Organiser une JPO malgré la pandémie
-                Notre projet était de réaliser un serveur Discord avec plusieurs espaces de discussion qui présenteraient l'école avec un système de questions-réponses avec un robot, ainsi qu'une multitude d'espaces vocaux dans lesquels les intéressés pouvaient discuter avec des guides qui présentaient différentes personnes de l'école pour répondre à leurs questions.
-                
-                Une opportunité cruciale pour l'école en période de Covid
-                Les enjeux de ce projet étaient assez conséquents car nous représentions l'école, mais nous étions aussi la seule chance de l'école d'avoir une JPO convenable, car avec le Covid, il était impossible de faire une JPO physique et l'école n'avait pas assez de personnel pour essayer autre chose que notre projet.
-                
-                
-                Attirer suffisamment de participants pour la JPO virtuelle
-                Les risques étaient nombreux, mais le plus critique était assez logique, c'était le nombre de personnes qui entendraient parler de notre JPO et qui voudraient venir. Même si nous faisions le Discord parfait pour accueillir les personnes, si personne ne voulait venir, notre projet allait être un échec. Nous avons donc beaucoup misé sur la communication pour être certains d'avoir suffisamment de monde.
-                
-                Des objectifs ambitieux dans le contexte de réalisation
-                Nous nous sommes fixé un objectif ambitieux, car nous voulions avoir autant de candidats que lors des JPO en présentiel. C'était ambitieux car les gens intéressés par l'école lors des différents salons étudiants n'allaient pas être au courant de notre nouveau format.
-                Création et l'amélioration du serveur Discord pour la JPO
-                Pour ce projet, je me suis chargé de la création et de l'amélioration du serveur Discord, de la gestion des différents salons vocaux et textuels, ainsi que des permissions pour éviter que les nouveaux arrivants puissent avoir accès à tout le serveur. J'ai également aidé à la création du robot permettant aux candidats d'avoir des réponses à leurs questions basiques rapidement.
-                
-                Un bilan positif malgré des objectifs ambitieux non atteints
+                <h2>
+                    Contexte de la collecte
+                </h2>
+                <h4>
+                    Nous avons décidé de faire cet évènement après une visite de l’EFS (Établissement Français du Sang) en 2ème semestre. Qui fait suite à une précédente édition moins ambitieuse.
+                </h4>
+                <h2>
+                    Un départ ambitieux
+                </h2>
+                <h4>
+                    Le Défi était de faire 100 dons du sang donc 100 personnes qui viennent à notre évènement pour donner leur sang, organisé dans le campus ESIEA ce qui était beaucoup pour sachant que lors de la précédente édition qui était d’aller directement à l’hôpital il y avait eu 18 personnes soit 5 fois moins.                </h4>
+                <h2>
+                    Une réelle course contre la montre
+                </h2>
+                <h4>
+                    Il y avait énormément de contrainte (temps et logistique) que ce soit du côté de l’EFS qui demandais une gestion professionnelle dans nos délais très court lié au projet scolaire et de risque des personne intéressés qui n’étaient pas garanti et l’EFS qui met du temps à répondre.                </h4>
+                <h2>
+                    Sang Pour Cent
+                </h2>
+                <h4>
+                    Sang pour Cent était un événement qui avait pour but d’organiser une collecte de sang dans notre campus avec pour seul aide de l’EFS le matériel nous devions faire toute la logistique, les différentes demandes de la part de l’EFS, la communication complète à propos de l’événement et le jour J toute la réception et l’animation autour de l’événement                </h4>
+                <h2>
+                    Le graphiste du projet
+                </h2>
+                <h4>
+                    Pour ma part je me suis chargé de la communication de l’événement ce fut décidé au début car j’arrivais à prendre la parole avec plus d’aisance que les autres membres de mon groupe et car je maitrisais des outils graphiques et au vus de l’objectif final qui a été sûr accomplie grâce aux grands affuts de monde je trouve que moi et la personne avec qui j’ai fait la communication nous nous en sommes très bien sortie. Les autres membres de notre groupe ont également très bien fait leur travail car la logistique était en place, les équipes de l’EFS nous en donner des consignes précises que nous avions atteinte suite aux nombreux échanges par mail. J’ai très peu interagi avec l’EFS j’ai beaucoup plus interagi avec les étudiants de l’écoles pour la communication. 
+                </h4>
+                <h2>
+                    Une récolte triomphante
+                </h2>
+                <h4>
+                    Au final les objectifs ont été sûr atteint car l’EFS nous avait demandé 100 donateurs mais il avait prévu 80 donateurs et au final nous en avons eu près de 110 donc nous avons dépassé tous les objectifs fixés                </h4>
+                <h2>
+                    Relâché et heureux
+                </h2>
+               <h4>
+                Directement après l’événement beaucoup de pression est retombé car gérer tout cet événement était génial mais également très stressant avec aussi à l’extérieur quelque articles sur l’événement sur le site de l’école mais aussi le journal de la ville.               </h4>
+                <h2>
+                    L’importance d’une bonne équipe
+                </h2>
+                <h4>
+                    Lors de cet évènement j’ai beaucoup appris déjà un plan de communication tangible et efficace mais également comment s’adresser aux gens lors des différentes étapes et je pense que si je devais changer quelque chose à ce projet se serais m’entourer de personne plus propice à certaine tache car l’or de l’événement certaine personne n’ont pas fait beaucoup de choses et nous avons de cette faite abandonnée des idées que l’on avait imaginée pour cet événement qui étaient secondaires                </h4>                
+            </ng-container>
+
+        </nz-modal>
+
+        <nz-modal [(nzVisible)]="JPO" nzTitle="ITI’PO la JPO virtuelle" (nzOnCancel)="JPOModal(JPO)" [nzFooter]="null" [nzWidth]="1080">
+            <ng-container *nzModalContent>
+                <h2>
+                    Une JPO sur Discord : l'innovation pendant la période de Covid
+                </h2>
+                <h4>
+                    Nous étions en pleine période de Covid et nous avions très peu de projets possibles car nous étions cloîtrés chez nous. L'école cherchait des propositions innovantes pour faire une Journée Portes Ouvertes (JPO), nous avons donc proposé l'idée de faire une JPO sur Discord, un réseau social.
+                    Organiser une JPO malgré la pandémie
+                </h4>
+                <h2>
+                    Une JPO sur Discord : l'innovation pendant la période de Covid
+                </h2>
+                <h4>
+                    Notre projet était de réaliser un serveur Discord avec plusieurs espaces de discussion qui présenteraient l'école avec un système de questions-réponses avec un robot, ainsi qu'une multitude d'espaces vocaux dans lesquels les intéressés pouvaient discuter avec des guides qui présentaient différentes personnes de l'école pour répondre à leurs questions.
+                </h4>
+                <h2>
+                    Une opportunité cruciale pour l'école en période de Covid
+                </h2>
+                <h4>
+                    Les enjeux de ce projet étaient assez conséquents car nous représentions l'école, mais nous étions aussi la seule chance de l'école d'avoir une JPO convenable, car avec le Covid, il était impossible de faire une JPO physique et l'école n'avait pas assez de personnel pour essayer autre chose que notre projet.
+                </h4>
+                <h2>
+                    Attirer suffisamment de participants pour la JPO virtuelle
+                </h2>
+                <h4>
+                    Les risques étaient nombreux, mais le plus critique était assez logique, c'était le nombre de personnes qui entendraient parler de notre JPO et qui voudraient venir. Même si nous faisions le Discord parfait pour accueillir les personnes, si personne ne voulait venir, notre projet allait être un échec. Nous avons donc beaucoup misé sur la communication pour être certains d'avoir suffisamment de monde.
+                </h4>
+                <h2>
+                    Des objectifs ambitieux dans le contexte de réalisation
+                </h2>
+                <h4>
+                    Nous nous sommes fixé un objectif ambitieux, car nous voulions avoir autant de candidats que lors des JPO en présentiel. C'était ambitieux car les gens intéressés par l'école lors des différents salons étudiants n'allaient pas être au courant de notre nouveau format.
+                </h4>
+                <h2>
+                    Création et l'amélioration du serveur Discord pour la JPO
+                </h2>
+                <h4>
+                    Pour ce projet, je me suis chargé de la création et de l'amélioration du serveur Discord, de la gestion des différents salons vocaux et textuels, ainsi que des permissions pour éviter que les nouveaux arrivants puissent avoir accès à tout le serveur. J'ai également aidé à la création du robot permettant aux candidats d'avoir des réponses à leurs questions basiques rapidement.
+                </h4>
+                <h2>
+                    Un bilan positif malgré des objectifs ambitieux non atteints
+                </h2>
+               <h4>
                 Au final, nous avons eu moins de candidats que lors des JPO en présentiel, ce qui était attendu, mais en dessous de nos objectifs. La différence n'était pas énorme et les professeurs présents lors de notre JPO virtuelle nous ont confié que notre JPO était beaucoup plus pratique pour eux pour communiquer avec les candidats, ce qui nous a tout de même rendus heureux malgré l'objectif principal non atteint.
-                
-                Le succès inattendu de notre JPO virtuelle
-                Le semestre suivant, le Covid était moins présent, mais l'école a tenu à refaire une JPO virtuelle pour permettre à plus de monde de découvrir l'école, ce qui montre que notre projet leur a plu et que l'échec des objectifs n'était que de notre point de vue.
-                La satisfaction d'avoir mené à bien un projet difficile en période de Covid
-                
-                Au final, je suis content d'avoir fait ce projet malgré les objectifs. Nous avons fait de notre mieux, et durant la période de Covid, qui était tout de même une période très particulière, cela a rendu la difficulté de notre projet encore plus grande, mais également la joie d'accomplissement encore plus grande.
-                
+               </h4>
+                <h2>
+                    Le succès inattendu de notre JPO virtuelle
+                </h2>
+                <h4>
+                    Le semestre suivant, le Covid était moins présent, mais l'école a tenu à refaire une JPO virtuelle pour permettre à plus de monde de découvrir l'école, ce qui montre que notre projet leur a plu et que l'échec des objectifs n'était que de notre point de vue.
+                </h4>                
+                <h2>
+                    La satisfaction d'avoir mené à bien un projet difficile en période de Covid
+                </h2>
+                <h4>
+                    Au final, je suis content d'avoir fait ce projet malgré les objectifs. Nous avons fait de notre mieux, et durant la période de Covid, qui était tout de même une période très particulière, cela a rendu la difficulté de notre projet encore plus grande, mais également la joie d'accomplissement encore plus grande.                    
+                </h4>
             </ng-container>
           </nz-modal>
     </div>
 
     <div class="compétences technique">
-        compétences technique
+        compétences technique 
+        <button nz-button [nzType]="'primary'" (click)="FrontendModal(Frontend)"><span>Frontend</span></button>
+        <button nz-button [nzType]="'primary'" (click)="MigrationModal(Migration)"><span>Migration</span></button>
+        <button nz-button [nzType]="'primary'" (click)="IonicModal(Ionic)"><span>Ionic</span></button>
+        
+        <nz-modal [(nzVisible)]="Frontend" nzTitle="Frontend" (nzOnCancel)="FrontendModal(Frontend)" [nzFooter]="null" [nzWidth]="1080">
+        <ng-container *nzModalContent>
+
+        </ng-container>
+        </nz-modal>
+
+        <nz-modal [(nzVisible)]="Migration" nzTitle="Migration" (nzOnCancel)="MigrationModal(Migration)" [nzFooter]="null" [nzWidth]="1080">
+            <ng-container *nzModalContent>
+                <h4>
+                    La migration applicative est, pour moi, la compétence la plus importante en informatique. Cela consiste à corriger les bugs, apporter des évolutions et communiquer avec le client. Dans un contexte professionnel, c'est une compétence cruciale car de nombreuses applications ont besoin d'être maintenues et beaucoup plus de personnes en font par rapport à la création de nouvelles applications dès le début.
+                </h4>
+
+                <h4>
+                    J'ai personnellement déjà maintenu plusieurs applications dans mon entreprise. Pour une application web, j'ai corrigé des bugs que le client nous avait envoyés grâce à une application dans l'entreprise. C'était sur une application que je ne connaissais pas, j'ai donc dû l'analyser, refaire les bugs, puis proposer un plan pour les corriger. Une fois que les plans ont été validés, j'ai pu corriger les bugs et les intégrer à l'application du client.
+                </h4>
+                
+                <h4>
+                    Je pense avoir un niveau moyen dans cette compétence car je manque d'expérience dans différents types d'applications, ce qui peut ralentir mon analyse. Il me faudrait continuer à travailler dans la maintenance pour être plus efficace. Acquérir la compétence en elle-même n'est pas très compliqué, cependant, être prêt à toute éventualité est bien plus difficile. Maîtriser complètement cette compétence est donc très difficile, et je ne sais pas si l'on peut dire que l'on la maîtrise complètement.
+                </h4>
+                
+                <h4>
+                    Cette compétence est importante dans mon parcours professionnel, essentiellement car j'ai déjà migré quelques applications en entreprise, et je sais que cela va encore arriver. Je pense qu'il est crucial de se maintenir à jour sur les nouvelles versions et les changements qu'elles impliquent, car cela va beaucoup me faciliter la tâche lors des migrations.
+                </h4>
+                
+            </ng-container>
+        </nz-modal>
+
+        <nz-modal [(nzVisible)]="Ionic" nzTitle="Ionic" (nzOnCancel)="IonicModal(Ionic)" [nzFooter]="null" [nzWidth]="1080">
+            <ng-container *nzModalContent>
+                <h4>
+                    Ionic est une compétence que j'ai découverte dans l'entreprise où j'ai effectué mon alternance. C'est un framework JavaScript qui permet de transformer un projet Angular (un autre framework pour faire du frontend web) en projet mobile pour Android et iOS. C'est très pratique dans mon entreprise lorsque nous souhaitons développer un seul projet que nous pouvons ensuite décliner dans plusieurs solutions pour les appareils mobiles.
+                </h4>
+                <h4>
+                    J'ai utilisé ce framework pour la première fois lorsque j'ai migré un projet Android vers une version supérieure d'Ionic. Ce n'était pas si difficile de prendre en main ce framework car il se basait sur quelque chose que je connaissais déjà, à savoir Angular. J'ai donc réussi mon premier projet en Ionic et je suis ensuite parti à la découverte d'autres aventures avec Ionic, notamment une application sur laquelle je travaille actuellement. Il s'agit d'une refactorisation d'une application existante qui ne répond plus aux besoins actuels des clients.
+                </h4>
+                <h4>
+                    Malgré la facilité d'apprentissage due à mes compétences passées, je ne pense pas pouvoir dire que je maîtrise parfaitement Ionic. J'ai néanmoins beaucoup d'expérience concrète dessus. Mais je ne me décourage pas et je sais que je ne vais que progresser car dans un futur proche, je sais que je continuerai à utiliser ce framework en entreprise et que je pourrai devenir un véritable expert en Ionic.
+                </h4>                
+                
+            </ng-container>
+        </nz-modal>
     </div>
 
     <div class="compétences humaine">
         compétences humaine
+        <button nz-button [nzType]="'primary'" (click)="AutonomieModal(Autonomie)"><span>Autonomie</span></button>
+        <button nz-button [nzType]="'primary'" (click)="EquipeModal(Equipe)"><span>Equipe</span></button>
+        <nz-modal [(nzVisible)]="Autonomie" nzTitle="Autonomie" (nzOnCancel)="AutonomieModal(Autonomie)" [nzFooter]="null" [nzWidth]="1080">
+            <ng-container *nzModalContent>
+        
+            </ng-container>
+        </nz-modal>
+
+        <nz-modal [(nzVisible)]="Equipe" nzTitle="Equipe" (nzOnCancel)="EquipeModal(Equipe)" [nzFooter]="null" [nzWidth]="1080">
+            <ng-container *nzModalContent>
+        
+            </ng-container>
+        </nz-modal>
     </div>

@@ -6,24 +6,44 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent implements OnInit {
-  isVisible : boolean = false;
+  JPO : boolean = false;
+  Bros : boolean = false;
+  Sang : boolean = false;
+  Frontend : boolean = false;
+  Migration : boolean = false;
+  Ionic : boolean = false
+  Autonomie : boolean = false;
+  Equipe : boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  showModal(): void {
-    this.isVisible = true;
+
+  JPOModal(modal : boolean) {
+    this.JPO = !modal
   }
-  
-  handleOk(): void {
-    console.log('Button ok clicked!');
-    this.isVisible = false;
+  BrosModal(modal : boolean) {
+    this.Bros = !modal
+  }
+  SangModal(modal : boolean) {
+    this.Sang = !modal
+  }
+  FrontendModal(modal : boolean) {
+    this.Frontend = !modal
+  }
+  MigrationModal(modal : boolean) {
+    this.Migration = !modal
+  }
+  IonicModal(modal : boolean) {
+    this.Ionic = !modal
+  }
+  AutonomieModal(modal : boolean) {
+    this.Autonomie = !modal
+  }
+  EquipeModal(modal : boolean) {
+    this.Equipe = !modal
   }
 
-  handleCancel(): void {
-    console.log('Button cancel clicked!');
-    this.isVisible = false;
-  }
 }
