@@ -14,6 +14,7 @@ export class ArticleComponent implements OnInit {
   Ionic : boolean = false
   Autonomie : boolean = false;
   Equipe : boolean = false;
+  Oral : boolean = false;
 
   constructor() { }
 
@@ -45,5 +46,7 @@ export class ArticleComponent implements OnInit {
   EquipeModal(modal : boolean) {
     this.Equipe = !modal
   }
-
+  OralModal(modal : boolean) {
+    this.Oral = !modal
+  }
 }

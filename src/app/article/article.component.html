@@ -1,12 +1,16 @@
+<div class="body">
 <div class="title">
     articles
 </div>
 
-    <div class="réalisation">
+    <div class="subtitle">
         réalisation
+    </div>
+    <div class="realisation">
         <button nz-button [nzType]="'primary'" (click)="JPOModal(JPO)"><span>JPO Virutelle</span></button>
         <button nz-button [nzType]="'primary'" (click)="BrosModal(Bros)"><span>Bowser Bros</span></button>
         <button nz-button [nzType]="'primary'" (click)="SangModal(Sang)"><span>Sang Pour Cent</span></button>
+    </div>
 
         <nz-modal [(nzVisible)]="Bros" nzTitle="Une première application avec de l’ambition" (nzOnCancel)="BrosModal(Bros)" [nzFooter]="null" [nzWidth]="1080">
                 <ng-container *nzModalContent>
@@ -157,18 +161,38 @@
                 </h4>
             </ng-container>
           </nz-modal>
-    </div>
 
-    <div class="compétences technique">
+    <div class="subtitle">
         compétences technique 
+    </div>
+    <div class="realisation">
         <button nz-button [nzType]="'primary'" (click)="FrontendModal(Frontend)"><span>Frontend</span></button>
         <button nz-button [nzType]="'primary'" (click)="MigrationModal(Migration)"><span>Migration</span></button>
         <button nz-button [nzType]="'primary'" (click)="IonicModal(Ionic)"><span>Ionic</span></button>
-        
+    </div>
+
         <nz-modal [(nzVisible)]="Frontend" nzTitle="Frontend" (nzOnCancel)="FrontendModal(Frontend)" [nzFooter]="null" [nzWidth]="1080">
         <ng-container *nzModalContent>
+            <h2>une compétence en constante évolution</h2>
+            <h4>
+                Le développement frontend est une compétence essentielle en informatique. Il englobe l'ensemble des éléments visibles sur un site, notamment l'interface utilisateur (UI), la connexion au backend et la partie cachée de l'utilisateur.
+            </h4>
+            <h4>
+                Vous avez commencé à développer cette compétence dès vos études supérieures, et vous avez réalisé plusieurs fronts de sites web dès votre deuxième année. Vous avez également poursuivi cette expérience en entreprise, en développant notamment le frontend d'une application mobile.
 
-        </ng-container>
+            </h4>
+            <h4>
+                Bien que vous estimez que votre compétence en développement frontend est déjà bien développée, vous reconnaissez que sa maîtrise complète reste un objectif à atteindre en raison de sa grande étendue. Vous continuez donc à travailler sur cette compétence en entreprise, tout en vous auto-formant grâce à des projets personnels pour affiner vos compétences.
+
+            </h4>
+            <h4>
+                Il est donc prévu que vous continuiez à progresser dans cette compétence en mettant en pratique vos connaissances dans un contexte professionnel et en réalisant des projets personnels pour renforcer vos compétences.
+
+            </h4>                
+                
+                
+            
+       </ng-container>
         </nz-modal>
 
         <nz-modal [(nzVisible)]="Migration" nzTitle="Migration" (nzOnCancel)="MigrationModal(Migration)" [nzFooter]="null" [nzWidth]="1080">
@@ -206,21 +230,76 @@
                 
             </ng-container>
         </nz-modal>
-    </div>
 
-    <div class="compétences humaine">
+    <div class="subtitle">
         compétences humaine
+    </div>
+    <div class="realisation">
         <button nz-button [nzType]="'primary'" (click)="AutonomieModal(Autonomie)"><span>Autonomie</span></button>
         <button nz-button [nzType]="'primary'" (click)="EquipeModal(Equipe)"><span>Equipe</span></button>
+        <button nz-button [nzType]="'primary'" (click)="OralModal(Oral)"><span>Oral</span></button>
+    </div>
+        
         <nz-modal [(nzVisible)]="Autonomie" nzTitle="Autonomie" (nzOnCancel)="AutonomieModal(Autonomie)" [nzFooter]="null" [nzWidth]="1080">
             <ng-container *nzModalContent>
-        
+                <h2>
+                    Naviguer entre autonomie et demande d'aide : Le juste équilibre dans mon parcours professionnel
+                </h2>
+                <h4>
+                    Je suis quelqu'un d'autonome, ce qui signifie pour moi que je suis capable de travailler seul, tout en sachant quand demander de l'aide si une tâche prend trop de temps dans mon entreprise. J'ai rapidement développé cette autonomie en apprenant à effectuer des recherches précises sur Internet et à établir des priorités afin de ne pas faire perdre de temps aux autres. J'ai parfois peur de demander des choses évidentes et faciles à trouver.
+                </h4>
+                <h4> 
+                    Au début de mon stage de troisième année, j'ai dû faire preuve d'une grande autonomie lors de la migration d'applications vers une version plus récente du langage. Je ne voulais pas déranger mon maître de stage qui était très occupé. Cette situation est fréquente dans le monde du travail, d'où l'importance d'être autonome pendant mon alternance.
+                </h4>
+                <h4> 
+                    Par exemple, il m'est arrivé de passer deux jours sur une tâche en avançant difficilement. J'ai alors demandé de l'aide à mon supérieur pour la terminer dans la journée, tout en ayant beaucoup appris de mes erreurs, grâce à mon autonomie. Lors d'une autre mission, j'ai dû travailler de manière autonome en essayant de résoudre autant de problèmes que possible par moi-même. J'ai travaillé de façon à contourner mes blocages afin de présenter ensuite un maximum de questions et de blocages à mon maître d'alternance, qui pouvait alors me guider. Cela m'a permis d'apprendre de nombreuses choses que je n'aurais pas apprises en demandant immédiatement de l'aide. J'ai également résolu des problèmes que je pensais très difficiles à résoudre, ce qui a été bénéfique en termes de gain de temps pour nous deux.
+                </h4>
+                <h4> 
+                    Je reconnais que la gestion de mon autonomie n'est pas parfaite. Parfois, je pense pouvoir gérer une situation moi-même, mais finalement cela me prend beaucoup plus de temps que prévu. À l'inverse, il y a des moments où je demande de l'aide et je réalise que la solution était en réalité facile à trouver. Je pense qu'une manière de résoudre ces difficultés est d'analyser plus en détail mes problèmes et mes solutions. Avec le temps, j'acquerrai de l'expérience pour résoudre facilement des blocages qui étaient auparavant compliqués.
+                </h4>
             </ng-container>
         </nz-modal>
 
         <nz-modal [(nzVisible)]="Equipe" nzTitle="Equipe" (nzOnCancel)="EquipeModal(Equipe)" [nzFooter]="null" [nzWidth]="1080">
             <ng-container *nzModalContent>
-        
+                <h2>
+                Le travail en équipe : La compétence clé dans le domaine de l'informatique
+                </h2>
+                <h4>
+                    Au début, je n'étais pas convaincu de l'importance du travail en équipe, mais après avoir réalisé de nombreux projets à plus grande échelle, j'ai compris toute son importance. 
+
+                </h4>
+                <h4>
+                    La majorité de mes projets ont été réalisés en équipe, et j'ai constaté qu'il est impossible d'atteindre la même vitesse et efficacité en travaillant seul, car chacun possède son domaine d'expertise et apporte de nouvelles idées et perspectives.
+
+                </h4>
+                <h4>
+                    Je me considère comme efficace en équipe, car je reconnais l'importance de cette compétence dans le domaine de l'informatique. Cependant, je sais qu'il me reste encore beaucoup à apprendre et à découvrir pour explorer toutes les facettes du travail en équipe.
+
+                </h4>
+                <h4>
+                    Pour continuer à développer cette compétence, je compte me donner comme objectif de devenir chef d'équipe. Je suis convaincu qu'une fois cette étape franchie, j'aurai une meilleure vision et compréhension du travail en équipe, ce qui me permettra de continuer à progresser dans cette compétence essentielle.
+
+                </h4>
             </ng-container>
         </nz-modal>
-    </div>
+        <nz-modal [(nzVisible)]="Oral" nzTitle="Oral" (nzOnCancel)="OralModal(Oral)" [nzFooter]="null" [nzWidth]="1080">
+            <ng-container *nzModalContent>
+                <h2>
+                    Une compétence clé à ne pas sous-estimer 
+                </h2>
+                <h4>
+                    Initialement, je ne pensais pas que la prise de parole en public était une compétence nécessaire, mais j'ai rapidement réalisé son importance, que ce soit pour présenter un projet ou simplement communiquer mes idées au sein d'une équipe.
+                </h4>
+                <h4>
+                    Au début de mes études supérieures, ma capacité à prendre la parole en public était clairement inexistante, mais grâce au nombre croissant de présentations de projets et d'exercices oraux, en dehors du domaine informatique, j'ai réussi à développer cette compétence.
+                </h4>
+                <h4>
+                    Bien que j'aie progressé dans cette compétence, je suis encore loin d'être un expert, ce qui est normal. J'ai eu du mal à me sentir à l'aise lorsque je parle devant un public, mais je constate que je progresse et que je peux continuer à m'améliorer.
+                </h4>
+                <h4>
+                    La montée en compétences dans ce domaine est difficile, car il y a peu d'occasions de faire des présentations orales. Cependant, je crois que chaque essai me permet d'acquérir une précieuse expérience, ce qui me permettra de continuer à évoluer, notamment dans un contexte professionnel.
+                </h4>
+            </ng-container>
+        </nz-modal>
+</div>

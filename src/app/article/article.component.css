@@ -1,0 +1,36 @@
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    background-color: var(--bkg-header-color);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin-top: 0%;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.subtitle{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 6%;
+    color: var( --text-aboutMe-subtitle-color);
+}
+
+.realisation{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
