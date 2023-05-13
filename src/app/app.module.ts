@@ -17,6 +17,9 @@ import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ArticleComponent } from './article/article.component';
+import { NzModalModule } from 'ng-zorro-antd/modal';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 
 registerLocaleData(en);
 
@@ -25,7 +28,8 @@ registerLocaleData(en);
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,9 @@ registerLocaleData(en);
     IconsProviderModule,
     NzLayoutModule,
     NzMenuModule,
-    NzDropDownModule
+    NzDropDownModule,
+    NzModalModule,
+    NzButtonModule
     ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
