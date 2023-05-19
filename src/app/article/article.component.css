@@ -2,6 +2,12 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Georgia;
+}
+
+h4 {
+    font-family: Georgia;
+
 }
 .body{
     display: flex;
@@ -11,6 +17,7 @@ h2{
 }
 .title{
     display: flex;
+    font-family: Georgia;
     justify-content: center;
     align-items: center;
     font-size: 35px;
@@ -20,6 +27,7 @@ h2{
 }
 .subtitle{
     display: flex;
+    font-family: Georgia;
     justify-content: center;
     font-weight: bolder;
     align-items: center;
@@ -33,4 +41,10 @@ h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.bouton {
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: large;
+    font-family: cursive;
 }

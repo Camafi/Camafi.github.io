@@ -1,15 +1,15 @@
 <div class="body">
 <div class="title">
-    articles
+    Articles
 </div>
 
     <div class="subtitle">
-        réalisation
+        Réalisation
     </div>
     <div class="realisation">
-        <button nz-button [nzType]="'primary'" (click)="JPOModal(JPO)"><span>JPO Virutelle</span></button>
-        <button nz-button [nzType]="'primary'" (click)="BrosModal(Bros)"><span>Bowser Bros</span></button>
-        <button nz-button [nzType]="'primary'" (click)="SangModal(Sang)"><span>Sang Pour Cent</span></button>
+        <a class="bouton" (click)="JPOModal(JPO)">ITI’PO : la JPO virtuelle</a>
+        <a class="bouton" (click)="BrosModal(Bros)">Bowser Bros : une première application avec de l’ambition</a>
+        <a class="bouton" (click)="SangModal(Sang)">Sang pour cent :  La collecte qui a dépassé toutes les attentes</a>
     </div>
 
         <nz-modal [(nzVisible)]="Bros" nzTitle="Une première application avec de l’ambition" (nzOnCancel)="BrosModal(Bros)" [nzFooter]="null" [nzWidth]="1080">
@@ -163,12 +163,12 @@
           </nz-modal>
 
     <div class="subtitle">
-        compétences technique 
+        Compétences technique 
     </div>
     <div class="realisation">
-        <button nz-button [nzType]="'primary'" (click)="FrontendModal(Frontend)"><span>Frontend</span></button>
-        <button nz-button [nzType]="'primary'" (click)="MigrationModal(Migration)"><span>Migration</span></button>
-        <button nz-button [nzType]="'primary'" (click)="IonicModal(Ionic)"><span>Ionic</span></button>
+        <a class="bouton" (click)="FrontendModal(Frontend)">Frontend : une compétence en constante évolution </a>
+        <a class="bouton" (click)="MigrationModal(Migration)">La migration applicative : Une compétence cruciale</a>
+        <a class="bouton" (click)="IonicModal(Ionic)">Ionic : Le framework mobile </a>
     </div>
 
         <nz-modal [(nzVisible)]="Frontend" nzTitle="Frontend" (nzOnCancel)="FrontendModal(Frontend)" [nzFooter]="null" [nzWidth]="1080">
@@ -197,6 +197,9 @@
 
         <nz-modal [(nzVisible)]="Migration" nzTitle="Migration" (nzOnCancel)="MigrationModal(Migration)" [nzFooter]="null" [nzWidth]="1080">
             <ng-container *nzModalContent>
+                <h2>
+                    La migration applicative : Une compétence cruciale en informatique pour la maintenance et l'évolution des applications
+                </h2>
                 <h4>
                     La migration applicative est, pour moi, la compétence la plus importante en informatique. Cela consiste à corriger les bugs, apporter des évolutions et communiquer avec le client. Dans un contexte professionnel, c'est une compétence cruciale car de nombreuses applications ont besoin d'être maintenues et beaucoup plus de personnes en font par rapport à la création de nouvelles applications dès le début.
                 </h4>
@@ -218,6 +221,9 @@
 
         <nz-modal [(nzVisible)]="Ionic" nzTitle="Ionic" (nzOnCancel)="IonicModal(Ionic)" [nzFooter]="null" [nzWidth]="1080">
             <ng-container *nzModalContent>
+                <h2>
+                    Le framework mobile pour transformer des projets Angular en applications iOS et Android
+                </h2>
                 <h4>
                     Ionic est une compétence que j'ai découverte dans l'entreprise où j'ai effectué mon alternance. C'est un framework JavaScript qui permet de transformer un projet Angular (un autre framework pour faire du frontend web) en projet mobile pour Android et iOS. C'est très pratique dans mon entreprise lorsque nous souhaitons développer un seul projet que nous pouvons ensuite décliner dans plusieurs solutions pour les appareils mobiles.
                 </h4>
@@ -232,12 +238,12 @@
         </nz-modal>
 
     <div class="subtitle">
-        compétences humaine
+        Compétences humaine
     </div>
     <div class="realisation">
-        <button nz-button [nzType]="'primary'" (click)="AutonomieModal(Autonomie)"><span>Autonomie</span></button>
-        <button nz-button [nzType]="'primary'" (click)="EquipeModal(Equipe)"><span>Equipe</span></button>
-        <button nz-button [nzType]="'primary'" (click)="OralModal(Oral)"><span>Oral</span></button>
+        <a class="bouton" (click)="AutonomieModal(Autonomie)">Autonomie : Naviguer entre autonomie et demande d'aide </a>
+        <a class="bouton" (click)="EquipeModal(Equipe)">Le travail en équipe : La compétence clé dans le domaine de l'informatique</a>
+        <a class="bouton" (click)="OralModal(Oral)">Une compétence à ne pas sous-estimer </a>
     </div>
         
         <nz-modal [(nzVisible)]="Autonomie" nzTitle="Autonomie" (nzOnCancel)="AutonomieModal(Autonomie)" [nzFooter]="null" [nzWidth]="1080">
@@ -286,7 +292,7 @@
         <nz-modal [(nzVisible)]="Oral" nzTitle="Oral" (nzOnCancel)="OralModal(Oral)" [nzFooter]="null" [nzWidth]="1080">
             <ng-container *nzModalContent>
                 <h2>
-                    Une compétence clé à ne pas sous-estimer 
+                    Une compétence à ne pas sous-estimer 
                 </h2>
                 <h4>
                     Initialement, je ne pensais pas que la prise de parole en public était une compétence nécessaire, mais j'ai rapidement réalisé son importance, que ce soit pour présenter un projet ou simplement communiquer mes idées au sein d'une équipe.

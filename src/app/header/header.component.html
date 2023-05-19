@@ -4,10 +4,9 @@
         <a class="nom" href="/">Bertonneau Clément</a>
       </div>
       <div class="buttonHeader">
-        <button id="button" class="home" nz-button nzType="text">Accueil</button>
-        <button id="button" nz-button nzType="text">A propos de moi</button>
-        <button id="button" nz-button nzType="text">Compétences</button>
-        <button id="button" nz-button nzType="text">Projets</button>
+        <button id="button" class="home" nz-button nzType="text" (click)="move(Home)">Accueil</button>
+        <button id="button" nz-button nzType="text" (click)="move(AboutMe)">A propos de moi</button>
+        <button id="button" nz-button nzType="text" (click)="move(Article)">Projets</button>
         <a (click)="toggleDarkMode()" class="bulb" nz-icon nzType="bulb" nzTheme="fill"></a>
       </div>
 
