@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,7 +14,8 @@ export class HeaderComponent implements OnInit {
   Article = 'Article'
 
 
-  constructor(private router : Router) { }
+  constructor(private router : Router,
+              private scroller : ViewportScroller) { }
 
   ngOnInit(): void {
   }
@@ -23,7 +26,20 @@ export class HeaderComponent implements OnInit {
   }
 
   move(url: string): void {
-    console.log(url)
-    this.router.navigate([url])
+    switch (true) {
+      case url === 'Home' :
+        this.scroller.scrollToPosition([0,0])
+        break;
+      case url === 'AboutMe' :
+        this.scroller.scrollToPosition([0,800])
+        break;
+      case url === 'Article' :
+        this.scroller.scrollToPosition([0,1800])
+        break;
+      default:
+        break;
+    }
+    console.log(this.scroller.getScrollPosition())
+    this.scroller.scrollToAnchor(url)
   }
 }
