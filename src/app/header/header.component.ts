@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isCollapsed = false;
-  constructor() { }
+  Home = 'Home';
+  AboutMe = 'AboutMe';
+  Article = 'Article'
+
+
+  constructor(private router : Router,
+              private scroller : ViewportScroller) { }
 
   ngOnInit(): void {
   }
@@ -15,5 +23,23 @@ export class HeaderComponent implements OnInit {
   
   toggleDarkMode(): void{
     document.body.classList.toggle('dark-theme');
+  }
+
+  move(url: string): void {
+    switch (true) {
+      case url === 'Home' :
+        this.scroller.scrollToPosition([0,0])
+        break;
+      case url === 'AboutMe' :
+        this.scroller.scrollToPosition([0,800])
+        break;
+      case url === 'Article' :
+        this.scroller.scrollToPosition([0,1800])
+        break;
+      default:
+        break;
+    }
+    console.log(this.scroller.getScrollPosition())
+    this.scroller.scrollToAnchor(url)
   }
 }
