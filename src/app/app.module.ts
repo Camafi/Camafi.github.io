@@ -7,7 +7,7 @@ import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IconsProviderModule } from './icons-provider.module';
@@ -20,7 +20,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ArticleComponent } from './article/article.component';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzButtonModule } from 'ng-zorro-antd/button';
-
+import { ContactMeComponent } from './contact-me/contact-me.component';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzMessageModule } from 'ng-zorro-antd/message';
 registerLocaleData(en);
 
 @NgModule({
@@ -29,7 +31,8 @@ registerLocaleData(en);
     HeaderComponent,
     HomeComponent,
     AboutMeComponent,
-    ArticleComponent
+    ArticleComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,10 @@ registerLocaleData(en);
     NzMenuModule,
     NzDropDownModule,
     NzModalModule,
-    NzButtonModule
+    NzButtonModule,
+    ReactiveFormsModule,
+    NzFormModule,
+    NzMessageModule
     ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }

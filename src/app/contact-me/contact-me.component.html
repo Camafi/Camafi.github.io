@@ -1,0 +1,58 @@
+<div class="body">
+    <h1>Contactez Moi</h1>
+
+    <h2>Une question ? une Remarque ? Un avis ? n'hésitez pas à me le dire !</h2>
+    
+    <form nz-form [formGroup]="messageForm" (ngSubmit)="submitForm()">
+        <nz-form-item>
+            <nz-form-label nzSpan="7" nzRequired>Prénom</nz-form-label>
+            <nz-form-control nzSpan="12">
+                <input nz-input formControlName="firstname" />
+            </nz-form-control>
+        </nz-form-item>
+    
+        <nz-form-item>
+            <nz-form-label nzSpan="7" nzRequired>Nom</nz-form-label>
+            <nz-form-control nzSpan="12">
+                <input nz-input formControlName="lastname" />
+            </nz-form-control>
+        </nz-form-item>
+    
+        <nz-form-item>
+            <nz-form-label nzSpan="7" nzRequired>Email</nz-form-label>
+            <nz-form-control nzSpan="12">
+                <input nz-input formControlName="email" />
+                <ng-template #emailErrorTpl let-control>
+                    Veuillez rentrer un email valide.
+                </ng-template>
+            </nz-form-control>
+        </nz-form-item>
+    
+        <nz-form-item>
+            <nz-form-label nzSpan="7" nzRequired>Message</nz-form-label>
+            <nz-form-control nzSpan="12">
+                <textarea nz-input formControlName="message" nz-row="2"></textarea>
+            </nz-form-control>
+        </nz-form-item>
+    
+        <nz-form-item>
+            <nz-form-control [nzXs]="{ offset: 0 }" [nzSm]="{ offset: 7 }" nzSpan="12">
+                <button
+                    nz-button
+                    nzType="primary"
+                    [disabled]="messageForm.invalid"
+                    nzBlock
+                    [nzLoading]="isLoadingSubmit"
+                >
+                    {{isLoadingSubmit ? "Envoi en cours" : "Envoyer"}}
+                </button>
+            </nz-form-control>
+        </nz-form-item>
+    
+        <ng-template #emptyErrorTpl let-control>
+            Ce champ ne doit pas être vide.
+        </ng-template>
+    
+    </form>
+</div>
+
