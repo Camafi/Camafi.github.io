@@ -2,7 +2,8 @@
 .body{
     display: flex;
     flex-direction: column;
-    height: 1000px;
+    align-items: center;
+    height: 1100px;
     background-color: var(--bkg-header-color);
 }
 
@@ -29,6 +30,8 @@
 }
 
 .text{
+    max-width: 60%;
+    word-break:keep-all;
     display: flex;
     justify-content: center;
     font-family: Georgia;
