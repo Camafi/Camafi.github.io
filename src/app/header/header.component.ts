@@ -9,10 +9,11 @@ import { ViewportScroller } from '@angular/common';
 })
 export class HeaderComponent implements OnInit {
   isCollapsed = false;
-  Home = 'Home';
-  AboutMe = 'AboutMe';
-  Article = 'Article';
-  Contact = 'Contact';
+  home = 'Home';
+  aboutMe = 'AboutMe';
+  techno = 'Techno';
+  article = 'Article';
+  contact = 'Contact';
 
 
   constructor(private router : Router,
@@ -34,11 +35,14 @@ export class HeaderComponent implements OnInit {
       case url === 'AboutMe' :
         this.scroller.scrollToPosition([0,800])
         break;
+      case url === 'Techno' :
+        this.scroller.scrollToPosition([0,2000])
+        break;
       case url === 'Article' :
-        this.scroller.scrollToPosition([0,1800])
+        this.scroller.scrollToPosition([0,2600])
         break;
         case url === 'Contact' :
-          this.scroller.scrollToPosition([0,2500])
+          this.scroller.scrollToPosition([0,3600])
           break;
       default:
         break;

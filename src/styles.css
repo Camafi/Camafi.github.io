@@ -7,6 +7,7 @@ body {
     --btn-bkg-color: rgba(216, 216, 216, 0.85);
     --bulb-color: rgba(255, 187, 0, 0.74);
     --bkg-image: url(../../Camafi.github.io/src/assets/Background.png);
+    --frise-image: url(../../Camafi.github.io/src\assets\Frise-white1.jpg);
     --text-aboutMe-subtitle-color: rgb(91, 93, 100);
     --text-aboutMe-text-color: rgb(49, 49, 49);
 
@@ -20,6 +21,7 @@ body.dark-theme {
     --btn-bkg-color: rgba(99, 99, 99, 0.85);
     --bulb-color: rgba(218, 167, 28, 0.74);
     --bkg-image: url(../../Camafi.github.io/src/assets/BackgroundDark.jpg);
+    --frise-image: url(../../Camafi.github.io/src\assets\Frise-dark1.jpg);
     --text-aboutMe-subtitle-color: rgb(182, 182, 182);
     --text-aboutMe-text-color: rgb(228, 228, 228);
 }

@@ -4,10 +4,11 @@
         <a class="nom" href="/">Bertonneau Clément</a>
       </div>
       <div class="buttonHeader">
-        <button id="button" class="home" nz-button nzType="text" (click)="move(Home)">Accueil</button>
-        <button id="button" nz-button nzType="text" (click)="move(AboutMe)">A propos de moi</button>
-        <button id="button" nz-button nzType="text" (click)="move(Article)">Réalisation & compétence</button>
-        <button id="button" nz-button nzType="text" (click)="move(Contact)">Contact</button>
+        <button id="button" class="home" nz-button nzType="text" (click)="move(home)">Accueil</button>
+        <button id="button" nz-button nzType="text" (click)="move(aboutMe)">A propos de moi</button>
+        <button id="button" nz-button nzType="text" (click)="move(techno)">Technologie</button>
+        <button id="button" nz-button nzType="text" (click)="move(article)">Réalisation & compétence</button>
+        <button id="button" nz-button nzType="text" (click)="move(contact)">Contact</button>
         <a (click)="toggleDarkMode()" class="bulb" nz-icon nzType="bulb" nzTheme="fill"></a>
       </div>
 
@@ -17,10 +18,21 @@
       </a>
       <nz-dropdown-menu #menu="nzDropdownMenu">
         <ul class="" nz-menu>
-          <li nz-menu-item><button id="button"  nz-button nzType="text">Accueil</button></li>
-          <li nz-menu-item><button id="button" nz-button nzType="text">A propos de moi</button></li>
-          <button id="button" nz-button nzType="text" (click)="move(Article)">Réalisation & compétence</button>
-          <button id="button" nz-button nzType="text" (click)="move(Contact)">Contact</button>
+          <li nz-menu-item>        
+            <button id="button" class="home" nz-button nzType="text" (click)="move(home)">Accueil</button>
+          </li>
+          <li nz-menu-item>
+            <button id="button" nz-button nzType="text" (click)="move(aboutMe)">A propos de moi</button>
+          </li>
+          <li>
+            <button id="button" nz-button nzType="text" (click)="move(techno)">Technologie</button>
+          </li>
+          <li>
+           <button id="button" nz-button nzType="text" (click)="move(article)">Réalisation & compétence</button>
+          </li>
+          <li>
+            <button id="button" nz-button nzType="text" (click)="move(contact)">Contact</button>
+          </li>
           <a (click)="toggleDarkMode()" class="bulb" nz-icon nzType="bulb" nzTheme="fill"></a>
         </ul>
         <!-- <button id="button"  nz-button nzType="text">Home</button>
