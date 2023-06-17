@@ -11,7 +11,8 @@ export class HeaderComponent implements OnInit {
   isCollapsed = false;
   Home = 'Home';
   AboutMe = 'AboutMe';
-  Article = 'Article'
+  Article = 'Article';
+  Contact = 'Contact';
 
 
   constructor(private router : Router,
@@ -36,6 +37,9 @@ export class HeaderComponent implements OnInit {
       case url === 'Article' :
         this.scroller.scrollToPosition([0,1800])
         break;
+        case url === 'Contact' :
+          this.scroller.scrollToPosition([0,2500])
+          break;
       default:
         break;
     }
