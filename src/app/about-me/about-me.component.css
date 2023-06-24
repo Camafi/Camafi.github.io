@@ -9,7 +9,7 @@
 .title{
     display: flex;
     justify-content: center;
-    font-family: Georgia;
+    font-family: serif;
     align-items: center;
     font-size: 45px;
     margin-top: 0%;
@@ -20,7 +20,7 @@
 .subtitle{
     display: flex;
     justify-content: center;
-    font-family: Georgia;
+    font-family: serif;
     font-weight: bolder;
     align-items: center;
     font-size: 35px;
@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    font-family: Georgia;
+    font-family: serif;
     align-items: center;
     font-size: 25px;
     text-align: center;

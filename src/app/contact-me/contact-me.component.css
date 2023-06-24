@@ -2,7 +2,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Georgia;
+    font-family: serif;
     color: var(--title-color);
 
 }
@@ -10,7 +10,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Georgia;
+    font-family: serif;
     color: var(--subtitle-color);
 
 }

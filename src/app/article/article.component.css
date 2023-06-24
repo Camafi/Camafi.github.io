@@ -2,11 +2,11 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Georgia;
+    font-family: serif;
 }
 
 h4 {
-    font-family: Georgia;
+    font-family: serif;
 
 }
 .body{
@@ -16,7 +16,7 @@ h4 {
 }
 .title{
     display: flex;
-    font-family: Georgia;
+    font-family: serif;
     justify-content: center;
     align-items: center;
     font-size: 35px;
@@ -26,7 +26,7 @@ h4 {
 }
 .subtitle{
     display: flex;
-    font-family: Georgia;
+    font-family: serif;
     justify-content: center;
     font-weight: bolder;
     align-items: center;
@@ -48,6 +48,7 @@ h4 {
     font-family: cursive;
 }
 .SPC{
+    cursor: pointer;
     background-image: var(--article-SPC); 
     height:300px; 
     width:306px;  
@@ -56,42 +57,50 @@ h4 {
 .BB{
     background-image: var(--article-BB); 
     height:150px; 
+    cursor: pointer;
     width: 300px;
 }
 .ITI{
     background-image: var(--article-ITI);
     height:300px; 
+    cursor: pointer;
     width:300px;  
 }
 .Front{
     background-image: var(--article-Front);
     height:300px; 
+    cursor: pointer;
     width:300px;  
 }
 
 .Ionic{
     background-image: var(--article-Ionic);
     height:300px; 
+    cursor: pointer;
     width:300px;  
 }
 
 .Migration{
     background-image: var(--article-Migration);
     height:300px; 
+    cursor: pointer;
     width:300px;  
 }
 .Auto{
     background-image: var(--article-Auto);
     height:300px; 
+    cursor: pointer;
     width:300px;  
 }
 .Equipe{
     background-image: var(--article-Equipe);
     height:300px; 
+    cursor: pointer;
     width:300px;  
 }
 .Oral{
     background-image: var(--article-Oral);
     height:300px; 
+    cursor: pointer;
     width:211px;  
 }
