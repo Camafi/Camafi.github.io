@@ -6,7 +6,7 @@
 
 .titre {
   display: flex;
-  font-family: Georgia;
+  font-family: serif;
   font-weight: bolder;
   font-size: 45px;
   justify-content: center;
@@ -19,7 +19,7 @@
 .presentation {
   display: flex;
   justify-content: center;
-  font-family: Georgia;
+  font-family: serif;
   font-weight: bolder;
   text-align: center;
   color: var(--text-color);
@@ -34,7 +34,7 @@
   font-size: 35px;
   justify-content: center;
   font-weight: bolder;
-  font-family: Georgia;
+  font-family: serif;
   color: var(--subtitle-color);
   margin-top: 10%;
   order: 2;
