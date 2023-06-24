@@ -21,7 +21,6 @@ html, body {
 }
 
 #button {
-  color: var(--text-color);
   background-color: var(--btn-bkg-color);
   margin: 0;
   font-size: 20px;
