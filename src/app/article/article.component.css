@@ -12,8 +12,7 @@ h4 {
 .body{
     display: flex;
     flex-direction: column;
-    height: 900px;
-    background-color: var(--bkg-header-color);
+    height: 1600px;
 }
 .title{
     display: flex;
@@ -23,7 +22,7 @@ h4 {
     font-size: 35px;
     margin-top: 0%;
     font-weight: bold;
-    color: var(--text-color);
+    color: var(--title-color);
 }
 .subtitle{
     display: flex;
@@ -33,7 +32,7 @@ h4 {
     align-items: center;
     font-size: 25px;
     margin-top: 6%;
-    color: var( --text-aboutMe-subtitle-color);
+    color: var( --subtitle-color);
 }
 
 .realisation{
@@ -47,4 +46,52 @@ h4 {
     color: var(--text-color);
     font-size: large;
     font-family: cursive;
+}
+.SPC{
+    background-image: var(--article-SPC); 
+    height:300px; 
+    width:306px;  
+}
+
+.BB{
+    background-image: var(--article-BB); 
+    height:150px; 
+    width: 300px;
+}
+.ITI{
+    background-image: var(--article-ITI);
+    height:300px; 
+    width:300px;  
+}
+.Front{
+    background-image: var(--article-Front);
+    height:300px; 
+    width:300px;  
+}
+
+.Ionic{
+    background-image: var(--article-Ionic);
+    height:300px; 
+    width:300px;  
+}
+
+.Migration{
+    background-image: var(--article-Migration);
+    height:300px; 
+    width:300px;  
+}
+.Auto{
+    background-image: var(--article-Auto);
+    height:300px; 
+    width:300px;  
+}
+.Equipe{
+    background-image: var(--article-Equipe);
+    height:300px; 
+    width:300px;  
+}
+.Oral{
+    background-image: var(--article-Oral);
+    height:300px; 
+    width:211px;  
 }

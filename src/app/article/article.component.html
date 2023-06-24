@@ -7,9 +7,9 @@
         Réalisation
     </div>
     <div class="realisation">
-        <a class="bouton" (click)="JPOModal(JPO)">ITI’PO : la journée porte ouverte virtuelle</a>
-        <a class="bouton" (click)="BrosModal(Bros)">Bowser Bros : une première application avec de l’ambition</a>
-        <a class="bouton" (click)="SangModal(Sang)">Sang pour cent :  La collecte qui a dépassé toutes les attentes</a>
+        <div class="bouton SPC" (click)="SangModal(Sang)"></div>
+        <div class="bouton BB" (click)="BrosModal(Bros)"></div>
+        <div class="bouton ITI" (click)="JPOModal(JPO)"></div>
     </div>
 
         <nz-modal [(nzVisible)]="Bros" nzTitle="Une première application avec de l’ambition" (nzOnCancel)="BrosModal(Bros)" [nzFooter]="null" [nzWidth]="1080">
@@ -165,10 +165,11 @@
     <div class="subtitle">
         Compétences technique 
     </div>
+
     <div class="realisation">
-        <a class="bouton" (click)="FrontendModal(Frontend)">Frontend : une compétence en constante évolution </a>
-        <a class="bouton" (click)="MigrationModal(Migration)">La migration et maintenance applicative : Une compétence cruciale</a>
-        <a class="bouton" (click)="IonicModal(Ionic)">Ionic : Le framework mobile </a>
+        <div class="bouton Front" (click)="FrontendModal(Frontend)"></div>
+        <div class="bouton Migration" (click)="MigrationModal(Migration)"></div>
+        <div class="bouton Ionic" (click)="IonicModal(Ionic)"></div>
     </div>
 
         <nz-modal [(nzVisible)]="Frontend" nzTitle="Frontend" (nzOnCancel)="FrontendModal(Frontend)" [nzFooter]="null" [nzWidth]="1080">
@@ -239,10 +240,11 @@
     <div class="subtitle">
         Compétences humaine
     </div>
+
     <div class="realisation">
-        <a class="bouton" (click)="AutonomieModal(Autonomie)">Autonomie : Naviguer entre autonomie et demande d'aide </a>
-        <a class="bouton" (click)="EquipeModal(Equipe)">Le travail en équipe : La compétence clé dans le domaine de l'informatique</a>
-        <a class="bouton" (click)="OralModal(Oral)">Une compétence à ne pas sous-estimer </a>
+        <div class="bouton Auto" (click)="AutonomieModal(Autonomie)"></div>
+        <div class="bouton Equipe" (click)="EquipeModal(Equipe)"></div>
+        <div class="bouton Oral" (click)="OralModal(Oral)"></div>
     </div>
         
         <nz-modal [(nzVisible)]="Autonomie" nzTitle="Autonomie" (nzOnCancel)="AutonomieModal(Autonomie)" [nzFooter]="null" [nzWidth]="1080">
@@ -265,7 +267,7 @@
             </ng-container>
         </nz-modal>
 
-        <nz-modal [(nzVisible)]="Equipe" nzTitle="Equipe" (nzOnCancel)="EquipeModal(Equipe)" [nzFooter]="null" [nzWidth]="1080">
+        <nz-modal [(nzVisible)]="Equipe" nzTitle="Travail d'équipe" (nzOnCancel)="EquipeModal(Equipe)" [nzFooter]="null" [nzWidth]="1080">
             <ng-container *nzModalContent>
                 <h2>
                 Le travail en équipe : La compétence clé dans le domaine de l'informatique
@@ -288,7 +290,7 @@
                 </h4>
             </ng-container>
         </nz-modal>
-        <nz-modal [(nzVisible)]="Oral" nzTitle="Oral" (nzOnCancel)="OralModal(Oral)" [nzFooter]="null" [nzWidth]="1080">
+        <nz-modal [(nzVisible)]="Oral" nzTitle="Communication oral" (nzOnCancel)="OralModal(Oral)" [nzFooter]="null" [nzWidth]="1080">
             <ng-container *nzModalContent>
                 <h2>
                     Une compétence à ne pas sous-estimer 
