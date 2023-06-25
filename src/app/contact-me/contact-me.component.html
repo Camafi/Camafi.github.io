@@ -5,21 +5,21 @@
     
     <form nz-form [formGroup]="messageForm" (ngSubmit)="submitForm()">
         <nz-form-item>
-            <nz-form-label nzSpan="7" nzRequired><p>Prénom</p></nz-form-label>
+            <nz-form-label class="blanc" nzSpan="7" nzRequired><span class="blanc">Prénom</span></nz-form-label>
             <nz-form-control nzSpan="12">
                 <input nz-input formControlName="firstname" />
             </nz-form-control>
         </nz-form-item>
     
         <nz-form-item>
-            <nz-form-label nzSpan="7" nzRequired><p>Nom</p></nz-form-label>
+            <nz-form-label nzSpan="7" nzRequired><span class="blanc">Nom</span> </nz-form-label>
             <nz-form-control nzSpan="12">
                 <input nz-input formControlName="lastname" />
             </nz-form-control>
         </nz-form-item>
     
         <nz-form-item>
-            <nz-form-label nzSpan="7" nzRequired><p>Email</p></nz-form-label>
+            <nz-form-label nzSpan="7" nzRequired> <span class="blanc">Email</span></nz-form-label>
             <nz-form-control nzSpan="12">
                 <input nz-input formControlName="email" />
                 <ng-template #emailErrorTpl let-control>
@@ -29,7 +29,7 @@
         </nz-form-item>
     
         <nz-form-item>
-            <nz-form-label nzSpan="7" nzRequired><p>Message</p></nz-form-label>
+            <nz-form-label nzSpan="7" nzRequired><span class="blanc">Message</span> </nz-form-label>
             <nz-form-control nzSpan="12">
                 <textarea nz-input formControlName="message" nz-row="2"></textarea>
             </nz-form-control>
@@ -44,7 +44,7 @@
                     nzBlock
                     [nzLoading]="isLoadingSubmit"
                 >
-                    {{isLoadingSubmit ? "Envoi en cours" : "Envoyer"}}
+                    <span class="black"> {{isLoadingSubmit ? "Envoi en cours" : "Envoyer"}} </span>
                 </button>
             </nz-form-control>
         </nz-form-item>
