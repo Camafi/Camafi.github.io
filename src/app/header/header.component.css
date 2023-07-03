@@ -23,13 +23,14 @@ html, body {
 #button {
   background-color: var(--btn-bkg-color);
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   justify-content: center;
   font-family: serif;
   line-height: 0px;
   padding: 12px 20px;
-  margin: 30px;
+  margin: 15px;
   border-radius: 12px;
+  color: white;
 }
 
 #button:hover{
@@ -74,7 +75,7 @@ li {
   font-family: cursive;
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 1300px) {
   .buttonHeader{
     display: none;
   } 
