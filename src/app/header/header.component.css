@@ -75,7 +75,7 @@ li {
   font-family: cursive;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   .buttonHeader{
     display: none;
   } 
